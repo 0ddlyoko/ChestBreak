@@ -14,3 +14,6 @@ permissions:
   chestbreak.toggle:
     default: op
     description: Toggle ChestTension or not
+  chestbreak.get:
+    default: op
+    description: Get the list of chests on maps

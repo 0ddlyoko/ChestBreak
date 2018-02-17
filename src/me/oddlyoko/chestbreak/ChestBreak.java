@@ -73,6 +73,13 @@ public class ChestBreak extends JavaPlugin {
 						setEnable(false);
 						sender.sendMessage(Variables.PLUGINNAMECOLOR + ChatColor.RED + "Plugin Off !");
 					}
+				} else if ("get".equalsIgnoreCase(args[0]) && sender.hasPermission("chestbreak.get")) {
+					sender.sendMessage(ChatColor.YELLOW + "********** " + Variables.PLUGINNAME + "**********");
+					for (Location loc : chests)
+						sender.sendMessage(ChatColor.YELLOW + "World: " + ChatColor.GOLD + loc.getWorld().getName()
+								+ ChatColor.YELLOW + ", X: " + ChatColor.GOLD + loc.getBlockX() + ", Y: "
+								+ ChatColor.GOLD + loc.getBlockY() + ", Z: " + ChatColor.GOLD + loc.getBlockZ());
+					sender.sendMessage(ChatColor.YELLOW + "Count: " + ChatColor.GOLD + chests.size());
 				}
 			}
 		}
