@@ -1,0 +1,16 @@
+name: ChestBreak
+main: me.oddlyoko.chestbreak.ChestBreak
+version: 1.0
+author: oddlyoko
+website: http://www.0ddlyoko.be
+commands:
+  chestbreak:
+    description: help ChestBreak
+    aliases: [cb]
+permissions:
+  chestbreak.use:
+    default: op
+    description: aaaa
+  chestbreak.toggle:
+    default: op
+    description: Toggle ChestTension or not
